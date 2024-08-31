@@ -1,0 +1,62 @@
+;
+; driver_again.inf
+;
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = System ; TODO: specify appropriate Class
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider    = %ManufacturerName%
+CatalogFile = driver_again.cat
+DriverVer   = ; TODO: set DriverVer in stampinf property pages
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+driver_again.sys = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName% = Standard,NT$ARCH$.10.0...16299 ; %13% support introduced in build 16299
+
+[Standard.NT$ARCH$.10.0...16299]
+%driver_again.DeviceDesc% = driver_again_Device, Root\driver_again ; TODO: edit hw-id
+
+[driver_again_Device.NT]
+CopyFiles = File_Copy
+
+[File_Copy]
+driver_again.sys
+
+;-------------- Service installation
+[driver_again_Device.NT.Services]
+AddService = driver_again,%SPSVCINST_ASSOCSERVICE%, driver_again_Service_Inst
+
+; -------------- driver_again driver install sections
+[driver_again_Service_Inst]
+DisplayName    = %driver_again.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\driver_again.sys
+
+[driver_again_Device.NT.Wdf]
+KmdfService = driver_again, driver_again_wdfsect
+
+[driver_again_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE = 0x00000002
+ManufacturerName = "<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+DiskName = "driver_again Installation Disk"
+driver_again.DeviceDesc = "driver_again Device"
+driver_again.SVCDESC = "driver_again Service"

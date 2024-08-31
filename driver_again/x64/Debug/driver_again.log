@@ -1,0 +1,31 @@
+﻿  Building 'driver_again' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\driver_again.inf
+  Stamping [Version] section with DriverVer=08/31/2024,9.43.7.510
+  Driver.c
+C:\driver_again\Driver.c(21,23): warning C4189: 'oa': local variable is initialized but not referenced
+C:\driver_again\Driver.c(23,14): warning C4101: 'status': unreferenced local variable
+C:\driver_again\Driver.c(22,15): warning C4101: 'clientId': unreferenced local variable
+C:\driver_again\Driver.c(20,12): warning C4189: 'hProcess': local variable is initialized but not referenced
+C:\driver_again\Driver.c(55,36): warning C4100: 'pDeviceObject': unreferenced formal parameter
+C:\driver_again\Driver.c(63,46): warning C4100: 'pDeviceObject': unreferenced formal parameter
+C:\driver_again\Driver.c(66,11): warning C4101: 'inSize': unreferenced local variable
+C:\driver_again\Driver.c(87,68): warning C4100: 'pRegistryPath': unreferenced formal parameter
+  driver_again.vcxproj -> C:\driver_again\x64\Debug\driver_again.sys
+  Done Adding Additional Store
+  Successfully signed: C:\driver_again\x64\Debug\driver_again.sys
+  
+  Driver is 'Universal'.
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\driver_again\x64\Debug\driver_again\driver_again.cat
+  Done Adding Additional Store
+  Successfully signed: C:\driver_again\x64\Debug\driver_again\driver_again.cat
+  

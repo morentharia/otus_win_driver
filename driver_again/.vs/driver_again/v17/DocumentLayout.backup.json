@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\driver_again\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66A2ECE3-E479-44EA-8792-961DBDE6AFC2}|driver_again.vcxproj|C:\\driver_again\\Driver.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{66A2ECE3-E479-44EA-8792-961DBDE6AFC2}|driver_again.vcxproj|solutionrelative:Driver.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Driver.c",
+              "DocumentMoniker": "C:\\driver_again\\Driver.c",
+              "RelativeDocumentMoniker": "Driver.c",
+              "ToolTip": "C:\\driver_again\\Driver.c",
+              "RelativeToolTip": "Driver.c",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-08-30T23:36:30.44Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

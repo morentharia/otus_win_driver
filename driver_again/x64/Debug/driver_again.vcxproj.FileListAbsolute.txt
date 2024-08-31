@@ -1,0 +1,2 @@
+Z:\driver_again\x64\Debug\driver_again.sys
+C:\driver_again\x64\Debug\driver_again.sys
